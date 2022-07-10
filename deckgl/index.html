@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>deck.gl Real-time</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {margin: 0; font-family: sans-serif; width: 100vw; height: 100vh; overflow: hidden;}
+  </style>
+</head>
+<body>
+<div id="app"></div>
+</body>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript">
+  App.renderToDOM(document.getElementById('app'));
+
+</script>
+
+<div style = "
+    position: fixed;
+	top: 10px;
+  right: 10px;
+  float:right;
+">
+  <div style = "  height:45px;width:140px;
+  background:LightSkyBlue;  padding-left: 5px;
+
+">Trajectories : <div id="tNumber"></div>
+</div>
+<div style = "  height:45px;width:140px;
+  background:yellow;  padding-left: 5px;
+
+">Time : <div id="timeDiv"></div></div>
+
+</div>
+</html>
