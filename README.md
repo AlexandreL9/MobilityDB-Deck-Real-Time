@@ -72,7 +72,9 @@ Actually, the last five positions are stored in a JSON file by the C implementat
 This server is based on the `cors_http_server.py` of [MobilityDB Deck](https://github.com/MobilityDB/MobilityDB-Deck/blob/main/geojsonvt/data/cors_http_server.py) 
 ## Configure Server
 
-Configure the IP and Port in cors_http_server.py
+Configure the IP and Port of your server in cors_http_server.py
+
+Make sure the ./C_Implementation/save_to_json.c file is configured to write to the ./data_server directory.
 
 ## Start Server
 
@@ -88,7 +90,11 @@ The Deckgl implementation come as a React application. It requires node.js to ru
 Install the dependencies
 
     npm install
-    
+
+Replace this url with your positions server adress 
+
+    fetch("http://localhost:8003/trips_last.json")
+
 ## Start DeckGL
 
     npm start
